@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0-windows10.0.19041.0</TargetFramework>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <AssemblyName>CDriveCleaner.Core</AssemblyName>
+    <RootNamespace>CDriveCleaner.Core</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Models\ScanItem.cs" />
+    <Compile Include="Analysis\IAnalyzer.cs" />
+    <Compile Include="Analysis\AnalyzerBase.cs" />
+    <Compile Include="Analysis\TempAnalyzer.cs" />
+    <Compile Include="Analysis\BrowserCacheAnalyzer.cs" />
+    <Compile Include="Analysis\RecycleBinAnalyzer.cs" />
+    <Compile Include="Analysis\WindowsUpdateCacheAnalyzer.cs" />
+    <Compile Include="Analysis\ThumbnailCacheAnalyzer.cs" />
+    <Compile Include="Analysis\SystemLogsAnalyzer.cs" />
+    <Compile Include="Cleaning\Cleaner.cs" />
+    <Compile Include="Utilities\FileSystemHelper.cs" />
+    <Compile Include="Utilities\SizeFormatter.cs" />
+    <Compile Include="Interop\NativeMethods.cs" />
+  </ItemGroup>
+</Project>

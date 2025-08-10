@@ -1,0 +1,29 @@
+# Build artifacts
+bin/
+obj/
+TestResults/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider / ReSharper
+.idea/
+*.DotSettings.user
+
+# Logs
+*.log
+
+# NuGet
+*.nupkg
+.nuget/
+packages/
+**/packages/*
+!**/packages/build/
+
+# Others
+.DS_Store
+Thumbs.db
